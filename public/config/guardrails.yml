@@ -1,0 +1,23 @@
+guardrails:
+  structural_integrity:
+    prevent_duplicates: true
+    enforce_src_prefix: true
+    strict_naming: true
+  bootstrapping:
+    commander_read_on_startup: true
+    verify_registry_match: true
+    continuous_learning: true
+  future_setups:
+    auto_lint_on_save: true
+    pre_flight_check_required: true
+    strict_mode_enabled: true
+    integration_ready: true
+  quarantine_and_banning:
+    banned_projects:
+      - "legacy_test_project"
+      - "unauthorized_crypto_miner"
+    banned_tasks:
+      - "delete_root_directory"
+      - "bypass_dry_run"
+      - "force_push_master"
+    enforcement: "HARD_STOP"

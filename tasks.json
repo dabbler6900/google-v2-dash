@@ -1,0 +1,10 @@
+[
+  {
+    "id": "TASK-1001",
+    "title": "Welcome OpenClaw",
+    "description": "Read the OPENCLAW_BOOTSTRAP.md file and introduce yourself in the terminal.",
+    "status": "TODO",
+    "assignee": "OPENCLAW",
+    "createdAt": "2026-03-17T00:00:00.000Z"
+  }
+]

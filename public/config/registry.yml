@@ -1,0 +1,24 @@
+workspace:
+  allowed_root_dirs:
+    - src
+    - public
+    - dashboards
+    - docs
+  required_files:
+    - AGENTS.md
+    - package.json
+    - vite.config.ts
+    - metadata.json
+    - workspace_registry.yaml
+  src_structure:
+    - components
+    - hooks
+    - utils
+    - types
+    - services
+    - assets
+    - core
+  enforced_patterns:
+    components: "PascalCase.tsx"
+    utils: "camelCase.ts"
+    styles: "kebab-case.css"

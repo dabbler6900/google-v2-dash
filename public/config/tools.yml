@@ -1,0 +1,15 @@
+allowed_tools:
+  file_system:
+    - view_file
+    - edit_file
+    - create_file
+    - list_dir
+  execution:
+    - shell_exec (grep only)
+    - compile_applet
+    - lint_applet
+restrictions:
+  max_parallel_edits: 5
+  require_view_before_edit: true
+  prevent_create_on_existing: true
+  auto_lint_after_multi_edit: true

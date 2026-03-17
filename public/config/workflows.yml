@@ -1,0 +1,23 @@
+workflows:
+  feature_addition:
+    description: "Standard operating procedure for adding new features."
+    steps:
+      - read_registry
+      - verify_no_duplicates
+      - propose_structure
+      - execute_changes
+      - update_registry
+  bug_fix:
+    description: "Protocol for isolating and resolving issues."
+    steps:
+      - analyze_logs
+      - isolate_component
+      - apply_fix
+      - run_lint
+  refactoring:
+    description: "Rules for modifying existing code without changing behavior."
+    steps:
+      - view_file
+      - verify_guardrails
+      - multi_edit_file
+      - compile_applet

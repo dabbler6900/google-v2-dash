@@ -1,0 +1,5 @@
+{
+  "name": "Agent Control Centre",
+  "description": "A workspace with enforced agent directives, guardrails, and bootstrapping rules to prevent duplicate files and maintain structural integrity.",
+  "requestFramePermissions": []
+}
