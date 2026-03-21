@@ -3,14 +3,16 @@
  * Detects behavior drift, state drift, and security drift over time.
  */
 
-import { broadcastStateUpdate } from '../../../server.js';
+import { broadcastStateUpdate } from '../events/broadcast.js';
 
 export type TraceEventType = 
   | 'BEHAVIOR_DRIFT' 
   | 'STATE_MUTATION' 
   | 'SECURITY_VIOLATION' 
   | 'LIFECYCLE'
-  | 'VERIFICATION_RESULT';
+  | 'VERIFICATION_RESULT'
+  | 'REASONING'
+  | 'COMMUNICATION';
 
 export interface TraceEvent {
   traceId: string;

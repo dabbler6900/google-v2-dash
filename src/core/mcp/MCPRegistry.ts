@@ -44,4 +44,8 @@ export class MCPRegistry {
   static getTool(id: string): MCPTool | undefined {
     return this.tools.get(id);
   }
+
+  static getAllTools(): MCPTool[] {
+    return Array.from(this.tools.values());
+  }
 }

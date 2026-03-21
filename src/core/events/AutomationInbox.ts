@@ -1,7 +1,7 @@
-import { broadcastStateUpdate } from '../../../server.js';
+import { broadcastStateUpdate } from './broadcast.js';
 import { Telemetry } from '../telemetry/TraceContract.js';
 
-export type EventSource = 'cron' | 'hook' | 'watcher' | 'ui' | 'discord' | 'telegram' | 'health-monitor' | 'mcp' | 'manual';
+export type EventSource = 'cron' | 'hook' | 'watcher' | 'ui' | 'discord' | 'telegram' | 'health-monitor' | 'mcp' | 'manual' | 'kernel';
 export type EventSeverity = 'low' | 'medium' | 'high' | 'critical';
 export type EventStatus = 'new' | 'routed' | 'processing' | 'completed' | 'failed';
 

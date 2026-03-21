@@ -5,7 +5,7 @@
 import { Telemetry } from '../telemetry/TraceContract.js';
 import fs from 'fs';
 import path from 'path';
-import { broadcastStateUpdate } from '../../../server.js';
+import { broadcastStateUpdate } from '../events/broadcast.js';
 
 export type TaskStatus = 'TODO' | 'IN_PROGRESS' | 'REVIEW' | 'DONE';
 export type TaskPriority = 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';

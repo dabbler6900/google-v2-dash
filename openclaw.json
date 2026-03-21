@@ -1,0 +1,24 @@
+{
+  "name": "OpenClaw OS Gateway",
+  "version": "1.0.0",
+  "endpoint": "http://localhost:3000",
+  "logicalPort": 6543,
+  "systemContext": "OPENCLAW_SYSTEM_CONTEXT.md",
+  "agents": [
+    { "name": "Commander", "doc": "src/core/agents/docs/Commander.md", "role": "EXECUTIVE", "color": "cyber-blue" },
+    { "name": "Ralph", "doc": "src/core/agents/docs/Ralph.md", "role": "TACTICAL", "color": "cyber-orange", "parent": "Commander" },
+    { "name": "TaskProcessor", "doc": "src/core/agents/docs/TaskProcessor.md", "role": "OPERATIONAL", "color": "cyber-pink" },
+    { "name": "ThinkingGateway", "doc": "src/core/agents/docs/ThinkingGateway.md", "role": "COGNITIVE", "color": "cyber-sky" },
+    { "name": "ProjectSoul", "doc": "src/core/agents/docs/ProjectSoul.md", "role": "CREATIVE", "color": "cyber-purple" },
+    { "name": "SecurityScanner", "doc": "src/core/agents/docs/SecurityScanner.md", "role": "SECURITY", "color": "cyber-pink" },
+    { "name": "DBAgent", "doc": "src/core/agents/docs/DBAgent.md", "role": "DATA", "color": "cyber-blue" }
+  ],
+  "mcp": {
+    "registry": "api/mcp",
+    "tools": [
+      { "name": "FileSystem", "description": "Read/Write access to the local workspace.", "status": "ACTIVE" },
+      { "name": "ShellExec", "description": "Execute permitted shell commands for system analysis.", "status": "ACTIVE" },
+      { "name": "ThinkingEngine", "description": "Access to advanced reasoning via Gemini models.", "status": "ACTIVE" }
+    ]
+  }
+}

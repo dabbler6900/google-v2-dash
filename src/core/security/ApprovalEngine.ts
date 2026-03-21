@@ -3,7 +3,7 @@
  * Includes nested agent calls.
  */
 import { Telemetry } from '../telemetry/TraceContract.js';
-import { broadcastStateUpdate } from '../../../server.js';
+import { broadcastStateUpdate } from '../events/broadcast.js';
 
 export enum PrivilegeLevel {
   READ = 'READ',
